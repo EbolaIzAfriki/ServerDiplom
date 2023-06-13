@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="a7e2d669c0c4403bb9cd10f6d166c472" Name="Diagram1">
+        <EntityTypeShape EntityType="DiplomBetaDBModel.Carrier" Width="1.5" PointX="0.75" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DiplomBetaDBModel.Client" Width="1.5" PointX="9" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DiplomBetaDBModel.Constraint" Width="1.5" PointX="8.25" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DiplomBetaDBModel.Point" Width="1.5" PointX="11.25" PointY="7.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="DiplomBetaDBModel.Service" Width="1.5" PointX="0.75" PointY="5" IsExpanded="true" />
+        <EntityTypeShape EntityType="DiplomBetaDBModel.ServiceCarrier" Width="1.5" PointX="3" PointY="7.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="DiplomBetaDBModel.Status" Width="1.5" PointX="3.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DiplomBetaDBModel.sysdiagrams" Width="1.5" PointX="8.75" PointY="4.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="DiplomBetaDBModel.TransportationCost" Width="1.5" PointX="8.25" PointY="14.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="DiplomBetaDBModel.TypeClient" Width="1.5" PointX="6.75" PointY="1.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="DiplomBetaDBModel.TypeConstraint" Width="1.5" PointX="6" PointY="4.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="DiplomBetaDBModel.User" Width="1.5" PointX="3.75" PointY="11.125" IsExpanded="true" />
+        <AssociationConnector Association="DiplomBetaDBModel.FK_ServiceCarrier_Carrier" ManuallyRouted="false" />
+        <AssociationConnector Association="DiplomBetaDBModel.FK_Client_TypeClient" ManuallyRouted="false" />
+        <AssociationConnector Association="DiplomBetaDBModel.FK_Point_Client" ManuallyRouted="false" />
+        <AssociationConnector Association="DiplomBetaDBModel.FK_Сonstraint_TypeConstraint" ManuallyRouted="false" />
+        <AssociationConnector Association="DiplomBetaDBModel.FK_ServiceCarrier_Service" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="DiplomBetaDBModel.Task" Width="1.5" PointX="6" PointY="7" />
+        <AssociationConnector Association="DiplomBetaDBModel.FK_Task_Carrier" />
+        <AssociationConnector Association="DiplomBetaDBModel.FK_Сonstraint_Task" />
+        <AssociationConnector Association="DiplomBetaDBModel.FK_Point_Task" />
+        <AssociationConnector Association="DiplomBetaDBModel.FK_Task_Status" />
+        <AssociationConnector Association="DiplomBetaDBModel.FK_Task_User" />
+        <AssociationConnector Association="DiplomBetaDBModel.FK_TransportationCost_Task" />
+        <AssociationConnector Association="DiplomBetaDBModel.TaskService" />
+        </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
